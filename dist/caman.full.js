@@ -377,7 +377,7 @@
       this.image = new Image();
       this.image.src = data;
       Log.debug("Image loaded. Width = " + (this.imageWidth()) + ", Height = " + (this.imageHeight()));
-      this.canvas = new Canvas(this.imageWidth(), this.imageHeight());
+      this.canvas = Canvas.createCanvas(this.imageWidth(), this.imageHeight());
       return this.finishInit();
     };
 
